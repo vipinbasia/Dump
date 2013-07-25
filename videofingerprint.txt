@@ -1,0 +1,255 @@
+RUV protocol :
+
+RVU allows the television viewer to watch live or recorded programming
+on various manufacturer-branded TVs or clients while experiencing a
+consistent user interface—no matter which client device is employed.
+RVU supports networking on existing home infrastructure. RVU-
+compliant TVs and clients are networked in the home with an RVU
+server. Once connected, the TV viewer can watch the same or different
+content from any room of the home. Viewers can access either pre-
+recorded or live content, premium content such as high-definition video
+and audio, or personal content such as photos and videos via the media
+server. RVU supports a novel remote user interface that allows user
+interactions such as trick play (e.g., pause and rewind) and the running
+of interactive applications—all via a thin client.
+
+
+
+
+
+The RVU protocol uses open standards (such as DLNA and UPnP) to
+establish a flexible, non-proprietary solution to address these needs.
+The RVU protocol’s system is based on a client-server architecture. The
+server is typically supplied by a content service provider that allows the
+distribution and management of video and a consistent user experience
+to one or many thin CE devices (clients).
+
+RVU allows users to easily access digital content throughout the home.
+A single server can be connected to programming (e.g., via a cable, telco
+or satellite feed) that can be recorded or watched live. The server can
+also access pictures, home movies, and other personal content from
+connected storage devices. All of this content can be accessed
+seamlessly from anywhere inside the home, allowing users in multiple
+rooms to view the same or different content from the server
+simultaneously.
+
+WHAT IS DLNA ???
+
+The Digital Living Network Alliance (DLNA) is a non-profit collaborative trade organization established by Sony in June 2003, that is responsible for defining interoperability guidelines to enable sharing of digital media between multimedia devices. These guidelines are built upon existing public standards, but the guidelines themselves are private (available for a fee). These guidelines specify a set of restricted ways of using the standards to achieve interoperability.
+
+WHAT IS A THIN CLIENT ??
+
+A thin client (sometimes also called a lean or slim client) is a computer or a computer program which depends heavily on some other computer (its server) to fulfill its computational roles. This is different from the traditional fat client, which is a computer designed to take on these roles by itself. The specific roles assumed by the server may vary, from providing data persistence (for example, for diskless nodes) to actual information processing on the client's behalf.
+
+
+
+RVU’s competitive features:-
+- open standards
+ - thin client-server architecture
+- digital content throughout the home
+- consistent user interface
+- seamless connectivity
+
+
+Network Topology OF RVU :
+The design of the RVU protocol allows for a number of different
+network topologies. Servers and clients using the RVU protocol can be
+deployed in a service provider provisioned network, where all network
+entities utilize the RVU protocol. Another option is to deploy RVU
+servers and clients alongside other network elements such as personal
+computers and other network-enabled devices that are not necessarily
+RVU compliant.
+
+
+
+
+
+VIDEO FINGERPRINTING :
+
+
+Video fingerprinting is a technique in which software identifies, extracts and then compresses characteristic components of a video, enabling that video to be uniquely identified by its resultant “fingerprint”. Video fingerprinting is technology that has proven itself to be effective at identifying and comparing digital video data.
+
+
+Principles behind video fingerprinting technology.
+
+Video fingerprinting methods extract several unique features of a digital video that can be stored as a fingerprint of the video content. The evaluation and identification of video content is then performed by comparing the extracted video fingerprints. For digital video data, both audio and video fingerprints can be extracted, each having individual significance for different application areas.
+
+The creation of a video fingerprint involves the use of software that decodes the video data and then applies several feature extraction algorithms. Video fingerprints are highly compressed when compared to the original source file and can therefore be easily stored in databases for later comparison. They may be seen as an extreme form of lossy compression and cannot be used to reconstruct the original video content.
+
+The huge number of videos currently available (thanks to the development of user generated content sites (UGC sites)) presents video fingerprinting technologies with a scalability challenge).
+
+
+WHAT IS UGC ??
+
+User-generated content (UGC) covers a range of media content available in a range of modern communications technologies. It entered mainstream usage during 2005, having arisen in web publishing and new media content production circles. It is used for a wide range of applications, including problem processing, news, gossip and research and reflects the expansion of media production through new technologies that are accessible and affordable to the general public. All digital media technologies are included, such as question-answer databases, digital video, blogging, podcasting, forums, review-sites, social networking, social media, mobile phone photography and wikis. In addition to these technologies, user-generated content may also employ a combination of open source, free software, and flexible licensing or related agreements to further reduce the barriers to collaboration, skill-building and discovery ("'UGC'") has also gained in popularity over the last decade, as more and more users have begun to flock to social media and "'content-based'" sharing sites.
+
+Challenges in Video Detection
+
+
+People can easily determine whether the test video is a copy from the video in the
+database by eyes, while there are some difficulties for computers. A video clip can be
+encoded in different formats depending on the purpose ( e.g. AWG uses less memory
+storage than DVD but has worse quality). Different formats can give rise to several
+distortions, such as change in brightness, shift in hue, change in saturation and spatial
+shift in the picture. Besides these digital artifacts, lossy encoding processes introduce
+artifacts like the blocking effects in MPEG. There are kinds of signature extraction
+methods depend on the color and image information in the videos, such as histograms
+and color coherence vectors, and due to the artifacts above a wrong detection
+probably occur.
+
+
+
+In the proposed paper of S. Lee and C.D. Yoo
+ three important qualities have been proposed.
+ Robustness: The fingerprints extracted from a degraded video should be similar
+   to the fingerprinting of the original video.
+ Pair-wise independent: Two videos, that are perceptually different, must have
+   different fingerprints.
+ Database search efficiency: Fingerprints must suitable for fast database search.
+
+
+Features can be classified into
+three dimensions.
+ Color dimension: This dimension depends on the color or gray-level properties
+   of frames, such as histogram, hue, saturation, etc.
+ Spatial dimension: This dimension extracts the distribution of color or
+   arrangement of objects inside frames, such as ordinal signature in space
+domain and Centroids of Gradient Orientations, etc. The key idea of this
+group is that it treats each pixel of a frame different according to the pixel
+location.
+
+Temporal dimension: Changes among frames or the order of frames are the key
+concepts of this dimension, motion detection, and ViCopT are popular
+examples exploiting the temporal information.
+
+
+
+Procedure, Steps & Symbolic Techniques
+
+
+Three steps
+
+1 Database Operation:
+
+Prepared work for copy detection, or it can be called the out-line work. Time
+consuming here is beyond consideration because we can execute the work at any time
+even when copy detection is not in use.
+
+2 Testing Query Operation:
+
+This is the starting point of copy detection. In this part, a video or just a small clip is
+being tested to find if it’s a copy from videos of the database or not. Time consuming
+here is considered.
+
+3 Matching:
+
+This is the decision part of the system. A powerful matching function/voting
+algorithm should be created for signature matching. Time consuming here is also
+considered.
+
+
+Four kinds of blocks
+
+
+1 Data:
+ “Videos in database” means the
+original, genuine videos collection.
+
+2 Strategy blocks:
+Strategy blocks here mean different procedures choosing to execute copy detection.
+We’ll see that with different techniques, the signatures can stand for a whole movie,
+whole scene, or just key frames in videos
+
+ #Key frames or not:
+From the paper I read, the signature extraction can executed on all the frames of a
+video/ a scene, or on several key frames of it. Key frames are simple yet effective
+form of summarizing a long video sequence, for example, the official website of a
+new released movie provides trailers or sets of pictures which give a compact
+description of the movie.
+Why don’t all the signature extraction techniques get features from every frame?
+The first reason is to make the process fast and fingerprints compact, we’ll see that a
+technique which does complicated computation on a frame prefers to use key frames
+rather than all the video sequence for building the fingerprints. And the second one is
+to avoid frame drops. 
+
+3 Operation:
+Operation blocks here are the algorithms for extracting signatures. We can separate
+the work into three different steps: Boundary/ Scene Separation, Key Frames
+Extraction, and Signature Extraction. These are the most technical steps of the
+whole CBCD system.
+
+
+Boundary/ Scene Separation:
+This step focuses on detecting the boundary of scenes. There are kinds of CBCD
+methods based on signatures of scenes, the reasons are that frames in a scene are
+similar or related, and a copy clip may just a scene cut. A scene can be seen as an
+event in the movie, while another term, shot, means frames coming from the same
+camera or the same angle, and it’s hard for computer to distinguish these two
+situations. Generally speaking, the histogram or color properties change a lot at
+boundaries of scenes, while sometimes these properties also change strongly at
+boundaries of shots. The basic method to detect boundaries of scenes is the
+measurement of histogram change, but in movies, some boundaries of scenes has
+been processed to have little and slow histogram change, and even a scene can contain
+some sharp-histogram-changing points, which both make scene-boundary detection
+difficult. An effective algorithm is too complicated for us to generate, so in our
+experiment, we just use a software found online to do scene separation.
+
+
+
+Key Frames Extraction:
+
+A
+video key frame is the frame that can represent the salient content of a video shot or
+scene. Key frames provide a suitable abstraction for video indexing, browsing, and
+retrieval. The extraction of key frames maps an entire video segment to a small
+collection of representative images, and should be automatic and content based so that
+they could maintain the salient content of the video while avoiding the redundancy.
+A great set of key frames should give clear description of a video, and same key
+frames are expected to be extracted from the original video and its copy. To solve the
+frame drop situation, we assume even the selected key frame get lost, frames of
+similar content around it are probably to be selected and maintain the detection
+accuracy; while techniques without key frame may hardly to solve this problem.
+
+
+Feature Extraction:
+
+This is the core of video fingerprinting. Selections of feature extraction methods can
+directly affect the copy detection performance. Here I’ll just explain the idea of using
+information in a video to construct video fingerprints rather than introduce the
+proposed techniques, which will be included in another report, “The core of video
+fingerprinting”. It’s hard to clearly explain what kinds of features are suitable to
+construct video fingerprints since the development of this technique is used to solve
+existent video transformations or attacks.
+
+
+4, Final decision:
+Final decision is the last step of video matching and copy detection, composed of
+searching, a voting algorithm (matching function), and a threshold. Searching
+means to find some candidate videos in the database which may contain the same
+content of the test clip, and the voting function is to decide which one is the best
+matching, finally the result is compared with a threshold to determine if the test clip is
+a copy or not.
+
+
+REFERENCES :-
+
+http://en.wikipedia.org/wiki/Digital_Living_Network_Alliance
+
+
+http://en.wikipedia.org/wiki/Thin_client
+
+https://en.wikipedia.org/wiki/User-generated_content
+
+https://en.wikipedia.org/wiki/Digital_video_fingerprinting
+
+Introduction to Video Fingerprinting.pdf
+
+static_page_files\RVU_White_Paper.pdf
+
+
+
+
+
+
+
+
